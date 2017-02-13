@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=feld
+comment0.target=GnomeSort(int[])
+comment1.params=
+comment1.target=void\ sortieren()
+comment2.params=p1\ p2
+comment2.target=void\ swap(int,\ int)
+comment2.text=\r\n\ vertauscht\ die\ Elemnte\ feldkopie[p1]\ und\ feldkopie[p2]\r\n
+numComments=3

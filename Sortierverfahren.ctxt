@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ kopieVonFeldErstellen()
+comment0.text=\r\n\ Kopie\ des\ feldes\ anlegen\r\n
+comment1.params=
+comment1.target=void\ sortieren()
+comment1.text=\r\n\ Die\ Kopie\ des\ feldes\ soll\ sortiert\ werden\r\n
+comment2.params=
+comment2.target=void\ zeitmessungErstellen()
+comment2.text=\r\n\ Zeitmessung\ erstellen\r\n
+comment3.params=
+comment3.target=long\ getDauer()
+comment3.text=\r\n\ gibt\ dauer\ zurueck\r\n
+numComments=4
