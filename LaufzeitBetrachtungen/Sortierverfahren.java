@@ -1,3 +1,5 @@
+package LaufzeitBetrachtungen;
+
 /**
  * Abstrakte Oberklasse fuer die Sortierverfahren
  * 
@@ -16,7 +18,7 @@ public abstract class Sortierverfahren
      */
     public void kopieVonFeldErstellen() {
         if(feldkopie == null) feldkopie = new int[feld.length];
-        
+
         for(int i = 0; i < feld.length; i++) {
             feldkopie[i] = feld[i];
         }
@@ -52,11 +54,22 @@ public abstract class Sortierverfahren
             if(dauer > zeiten[i]) dauer = zeiten[i];        
         }
     }
-    
+
     /**
      * gibt dauer zurueck
      */
     public long getDauer() {
         return dauer;
-    }	
+    }   
+
+    public void setFeld(int[] feld) {
+        this.feld = feld;
+        feldkopie = null;
+    }
+
+    public void printField() {
+        for(int i = 0; i < feld.length; i++) {
+            System.out.println(feld[i]);
+        }
+    } 
 }

@@ -1,3 +1,5 @@
+package LaufzeitBetrachtungen;
+
 /**
  * Implementation von GnomeSort
  * nach https://en.wikipedia.org/wiki/Gnome_sort

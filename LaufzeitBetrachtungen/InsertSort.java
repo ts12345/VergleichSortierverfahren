@@ -1,3 +1,5 @@
+package LaufzeitBetrachtungen;
+
 
 /**
  * Implementation von InsertSort
@@ -11,14 +13,14 @@ public class InsertSort extends Sortierverfahren
     }
     
     public void sortieren(){
-        for (int i = 1; i<feld.length; i++){
-            int aktuell = feld[i];
+        for (int i = 1; i<feldkopie.length; i++){
+            int aktuell = feldkopie[i];
             int compareto = i-1;
-            while((compareto>=0)&&(aktuell < feld[compareto])){
-                feld[compareto+1]=feld[compareto];
+            while((compareto>=0)&&(aktuell < feldkopie[compareto])){
+                feldkopie[compareto+1]=feldkopie[compareto];
                 compareto--;
             }
-            feld[compareto+1]=aktuell;
+            feldkopie[compareto+1]=aktuell;
         }
     }
 }
