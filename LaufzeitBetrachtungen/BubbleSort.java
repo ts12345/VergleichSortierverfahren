@@ -1,3 +1,5 @@
+package LaufzeitBetrachtungen;
+
 import java.util.Random;
 /**
  * Implementation von BubbleSort
@@ -6,7 +8,6 @@ import java.util.Random;
  */
 public class BubbleSort extends Sortierverfahren
 {
-    protected int[] feld;
 
     public BubbleSort(int[] feld)
     {
