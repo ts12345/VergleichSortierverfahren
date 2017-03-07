@@ -1,5 +1,3 @@
-package LaufzeitBetrachtungen;
-
 /**
  * Implementation von GnomeSort
  * nach https://en.wikipedia.org/wiki/Gnome_sort
@@ -7,13 +5,8 @@ package LaufzeitBetrachtungen;
  * @author ts12345
  * @version 1.0
  */
-
-public class GnomeSort extends Sortierverfahren
-{
-    public GnomeSort(int[] feld)
-    {
-        this.feld = feld;
-    }
+public class GnomeSort extends Sortierverfahren {
+    public GnomeSort(int[] feld) { this.feld = feld; }
 
     public void sortieren() {
         // Umbenunng um Lesbarkeit zu erhoehen
@@ -21,20 +14,14 @@ public class GnomeSort extends Sortierverfahren
         int[] a = feldkopie;
 
         int pos = 0;
-
         
         while(pos < a.length) {
-            if(pos == 0 || a[pos] >= a[pos - 1]) {
-                pos = pos + 1;                
-            } 
+            if(pos == 0 || a[pos] >= a[pos - 1]) { pos = pos + 1; } 
             else {
-                
                 swap(pos, pos - 1);
                 pos = pos - 1;
             }
         }
-
-        
     }
     
     /**
@@ -45,5 +32,4 @@ public class GnomeSort extends Sortierverfahren
         feldkopie[p1] = feldkopie[p2];
         feldkopie[p2] = tmp;
     }
-
 }

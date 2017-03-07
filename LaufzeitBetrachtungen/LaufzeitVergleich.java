@@ -1,24 +1,21 @@
-
-package LaufzeitBetrachtungen;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-public class LaufzeitVergleich
-{
+public class LaufzeitVergleich {
     private  ArrayList<Sortierverfahren> sortierverfahren;
     private  int[] feldgroessen;
     private HashMap<Sortierverfahren, long[]> laufzeiten;
 
-    public LaufzeitVergleich()    
-    {
+    public LaufzeitVergleich() {
         sortierverfahren = new ArrayList<Sortierverfahren>();
         sortierverfahren.add(new BubbleSort(null));
         sortierverfahren.add(new GnomeSort(null));
         sortierverfahren.add(new InsertSort(null));
+        sortierverfahren.add(new QUICKSORT(null));
 
-        feldgroessen = new int[] { 10, 31, 100, 316, 1000, 3162, 10000,  31622 };  // 100000 };
+        /** Auskommentierte Feldgroessen auskommentiert lassen (#stackoverflow) */
+        feldgroessen = new int[] { 10, 31, 100, 316, 1000, 3162, 10000}; // 31622 };  // 100000 };
 
         laufzeiten = new HashMap<Sortierverfahren, long[]>();
 
@@ -62,10 +59,7 @@ public class LaufzeitVergleich
     public static int[] getRandomField(int size, int range) {
         Random r = new Random();
         int[] field = new int[size];
-        for(int i = 0; i < size; i++) {
-            field[i] = r.nextInt(range);
-        }
+        for(int i = 0; i < size; i++) { field[i] = r.nextInt(range); }
         return field;   
     }
-
 }
